@@ -1,5 +1,10 @@
 #include<stdio.h>
 
+
+//指针函数使用
+void change(int *p){
+        *p = 244;
+    }
 int main(int argc, char const *argv[])
 {
     int a[5]={1,2,3,4,5};
@@ -19,6 +24,10 @@ int main(int argc, char const *argv[])
     printf("%d \n",q);
     printf("p-q:%d\n",q-p); //指针计算的单位使用的是变量类型int,不是byte
     
-    
+    int b = 4;
+    int *n = &b;
+    change(n);
+    printf("b:%d",b);
     return 0;
 }
+ 
