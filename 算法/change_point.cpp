@@ -3,7 +3,7 @@
 
 //定义函数，指针类型
 void swap(int *a,int *b){
-    int temp;
+    int temp;            //一定要初始化temp
     temp = *a;
     *a = *b ;
     *b =temp;
