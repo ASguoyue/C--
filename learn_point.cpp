@@ -7,4 +7,9 @@ int main(int argc, char const *argv[])
     a = 233;
     printf("%d  %d",&a,a);
     return 0;
+
+
+
+
+    
 } 
