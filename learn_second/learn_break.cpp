@@ -9,7 +9,7 @@ int main(int argc, char const *argv[])
         sum = sum+i;
         if(sum > 2000)
             break;  //break 直接跳出循环
-            continue; //continue 结束循环的当前轮回
+            //continue; //continue 结束循环的当前轮回
 
     }
     printf("%d",sum);

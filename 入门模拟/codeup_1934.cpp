@@ -20,10 +20,10 @@ int main(int argc, char const *argv[])
             out = num[i];
             k=i;
             printf("%d",k);
-            break;
+            break;          //退出查找，直接退出for循环
         }  
     }
-    if (k==n)
+    if (k==n)   //多判断一下是否结束，对比到最后一个元素
         {
            printf("-1 \n");
         }
