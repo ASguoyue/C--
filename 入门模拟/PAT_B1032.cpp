@@ -16,7 +16,8 @@ int main(int argc, char const *argv[])
         school[id]+=score;  //对应学校的位置的score相加
     }
     
-    int k,MAX=0;
+    int k,MAX=0;  //通过枚举计算出最大的元素
+    //每次都和一个值相比，进行迭代
     for (int i = 0; i < maxn; i++)
     {
         if (school[i]>MAX)
