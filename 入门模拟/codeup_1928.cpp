@@ -32,7 +32,7 @@ int main(int argc, char const *argv[])
                 m1++;
                 d1 = 1;
             }
-            if (m1 == 13)
+            if (m1 == 13)  //判断月份是否大于13
             {
                 y1++;
                 m1 = 1;
