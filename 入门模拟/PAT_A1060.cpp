@@ -57,7 +57,7 @@ int main(int argc, char const *argv[])
     int e1 = 0, e2 = 0;
     s3 = deal(s1, e1);//字符进行比较
     s4 = deal(s2, e2);
-    if (s3 == s4 && e1 == e2)
+    if (s3 == s4 && e1 == e2)   //主体相同和指数相同
     {
         cout << "yes 0." << s3 << "*10^" << e1 << endl;
     }
