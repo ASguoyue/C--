@@ -10,6 +10,8 @@ int main()
         {
             str[i][j] = getchar();
 
+            
+
         }
         getchar();  
     }

@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
     setprint(cnt++);
 
     int a[4]={11,12,13,14};
-    s.insert(a,a+4);
-    setprint(cnt++);
+    s.insert(a,a+4);  //×ó±ÕÓÒ¿ªÇø¼ä
+    setprint(cnt++);  
     return 0;
 }
