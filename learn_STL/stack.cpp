@@ -1,9 +1,7 @@
 //栈的定义，先进后出
-//push
-//top()
-//pop()
-
-
+//push()  入栈
+//top()  获得栈顶元素
+//pop()  弹出栈顶元素
 
 #include<iostream>
 #include<stack>
