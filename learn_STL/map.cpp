@@ -14,6 +14,17 @@ int main(int argc, char const *argv[])
     mp['c']=20;
     mp['c']=30;
     printf("%d \n",mp['c']); //重新赋值
+    
+    mp['m']=10;
+    mp['a'] = 50;
+
+    for (map<char,int>::iterator it=mp.begin();it!=mp.end();it++)
+    {
+       printf("%c %d \n",it->first,it->second);  //it->first映射的键  it->second映射的值
+    }
+    
+
+
 
     return 0;
 }
