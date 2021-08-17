@@ -14,7 +14,6 @@ int main(int argc, char const *argv[])
     mp['c']=20;
     mp['c']=30;
     printf("%d \n",mp['c']); //ÖØÐÂ¸³Öµ
-    
 
     return 0;
 }
