@@ -6,7 +6,7 @@
 using namespace std;
 struct Student
 {
-    char id[15];       //准考证号
+    char id[15];       //准考证号 char类型
     int score;        // 分数
     int location_num; //考场号
     int local_rank;   //考场的排名
