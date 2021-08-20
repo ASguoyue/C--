@@ -1,19 +1,19 @@
-#include <iostream>
-#include <cstring>
-#include <algorithm>
-#include <cstdio>
+#include<iostream>
+#include<cstring>
+#include<algorithm>
+#include<cstdio>
 
 using namespace std;
-struct student
+struct Student
 {
-    int id[15];       //准考证号
+    char id[15];       //准考证号
     int score;        // 分数
     int location_num; //考场号
     int local_rank;   //考场的排名
-} stu[3000];
+} stu[30010];
 
 //重写比较函数 如果分数不同，按照从大到小排列（取大于号），如果分数相同，按照id从小到大排列（去小于号）
-bool cmp(student a, student b)
+bool cmp(Student a, Student b)
 {
     if (a.score != b.score)
     {
@@ -21,11 +21,11 @@ bool cmp(student a, student b)
     }
     else
     {
-        return strcmp(a.id, b.id) < 0; //因为id是数组类型，使用strcmp来进行比较 a的大于b的返回0
+        return strcmp(a.id,b.id) < 0; //因为id是数组类型，使用strcmp来进行比较 a的大于b的返回0
     }
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
     int num = 0, k, n;
     scanf("%d", &n); //输入考场数
@@ -35,7 +35,7 @@ int main(int argc, char const *argv[])
         for (int j = 0; j < k; j++)
         {
             scanf("%s %d", stu[num].id, &stu[num].score); //获取当前考场学生的id和分数
-            stu[num].location_num = i;                    //设置考场号
+            stu[num].location_num = i+1;                    //设置考场号
             num++;                                        //学生的名次加一
         }
         sort(stu + num - k, stu + num, cmp); //将该考场的考生进行排序 stu初始的地址，加学生的总数，减去当前考场的人数，就是当前考场中的第一号
@@ -65,7 +65,7 @@ int main(int argc, char const *argv[])
         {
             r = i + 1;
         }
-        printf("%s", stu[i].id);
+        printf("%s ", stu[i].id);
         printf("%d %d %d \n", r, stu[i].location_num, stu[i].local_rank);
     }
 
