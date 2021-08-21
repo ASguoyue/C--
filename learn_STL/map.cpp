@@ -22,9 +22,5 @@ int main(int argc, char const *argv[])
     {
        printf("%c %d \n",it->first,it->second);  //it->firstÓ³ÉäµÄ¼ü  it->secondÓ³ÉäµÄÖµ
     }
-    
-
-
-
     return 0;
 }
