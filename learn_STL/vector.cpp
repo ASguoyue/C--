@@ -29,8 +29,8 @@ int main()
     // vi.size() 获取vi中的元素个数
     // vi.clear() 清空vi
     // vi.insert(i,x) 在i位置插入x
-    // vi.erase(i) 删除i单个元素  vi.erase(i,j) 删除i到j中的元素 
-
+    // vi.erase(i) 删除i单个元素 erase的返回值是一个迭代器，指向删除元素下一个元素。
+    //vi.erase(i,j) 删除i到j中的元素 返回下一个指针
     return 0;
 }
 
