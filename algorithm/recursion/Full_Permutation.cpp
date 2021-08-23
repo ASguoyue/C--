@@ -19,7 +19,7 @@ void generate(int index)  //index 索引序号
         return;
     }
     for (int x = 1; x <= n; x++)  //以1-n为开头的全排列
-    {
+    {                     
         if (hashTable[x] == false)
         {
             P[index] = x;     //将x写入
